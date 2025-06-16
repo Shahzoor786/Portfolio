@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Shahzoor</title>
+    <meta name="description" content="Thank you for contacting Shahzoor">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .thank-you {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+            background: linear-gradient(to right, rgba(31, 34, 53, 0.9), rgba(31, 34, 53, 0.8)), url('https://source.unsplash.com/random/1920x1080/?workspace') no-repeat center/cover;
+            color: white;
+        }
+        .check-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(108, 99, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(108, 99, 255, 0);
+            }
+        }
+        .thank-you h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .thank-you p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(78, 84, 200, 0.3);
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(78, 84, 200, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <section class="thank-you">
+        <div class="check-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </section>
+</body>
+</html>
